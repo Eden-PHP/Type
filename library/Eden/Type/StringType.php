@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-namespace Eden\Type\Type;
+namespace Eden\Type;
 
 use Eden\Type\Argument;
 
@@ -136,7 +136,7 @@ class StringType extends Base
 	 * @param string
 	 * @return string|false
 	 */
-    protected function getMethodType(&$name)
+    protected function getMethodType($name)
     {
         if(isset(self::$methods[$name])) {
             return self::$methods[$name];

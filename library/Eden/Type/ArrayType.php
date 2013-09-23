@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-namespace Eden\Type\Type;
+namespace Eden\Type;
 
 use Eden\Type\Argument;
 
@@ -420,7 +420,7 @@ class ArrayType extends Base implements \ArrayAccess, \Iterator, \Serializable, 
      * @param *string
      * @return string
      */
-    protected function getMethodType(&$name) 
+    protected function getMethodType($name) 
     {
         if(isset(self::$methods[$name])) {
             return self::$methods[$name];
