@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-class Eden_Tests_Type_StringTypeTest extends \PHPUnit_Framework_TestCase
+class Eden_Type_Tests_Type_StringTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testCamelize()
     {

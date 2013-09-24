@@ -1,7 +1,7 @@
 {
     "name": "eden-php/type",
     "type": "library",
-    "description": "Type methods for Eden Core",
+    "description": "Eden data type component",
     "keywords": ["eden", "library"],
     "homepage": "http://eden-php.com",
     "license": "MIT",
@@ -13,9 +13,9 @@
     ],
     "require": {
         "php": ">=5.3.1",
-		"eden-php/core": ">=1.0.0"
+		"eden-php/core": "1.*"
     },
     "autoload": {
-         "psr-0": { "Eden\\": "library/" }
+         "psr-0": { "Eden\\Type": "" }
     }
 }

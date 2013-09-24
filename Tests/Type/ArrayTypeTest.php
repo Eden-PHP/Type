@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-class Eden_Tests_Type_ArrayTypeTest extends \PHPUnit_Framework_TestCase
+class Eden_Type_Tests_Type_ArrayTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testCopy()
     {

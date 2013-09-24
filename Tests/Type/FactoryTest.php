@@ -7,7 +7,7 @@
  * distributed with this package.
  */
  
-class Eden_Tests_Type_FactoryTest extends \PHPUnit_Framework_TestCase
+class Eden_Type_Tests_Type_FactoryTest extends \PHPUnit_Framework_TestCase
 {
 
     public function testType()
