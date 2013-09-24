@@ -1,5 +1,5 @@
 {
-    "name": "eden-php/type",
+    "name": "eden/type",
     "type": "library",
     "description": "Eden data type component",
     "keywords": ["eden", "library"],
