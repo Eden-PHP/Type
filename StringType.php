@@ -71,7 +71,7 @@ class StringType extends Base
      */
     public function dasherize()
     {
-        $this->data = preg_replace("/[^a-zA-Z0-9_-\s]/i", '', $this->data);
+        $this->data = preg_replace("/[^a-zA-Z0-9_\s-]/i", '', $this->data);
         $this->data = str_replace(' ', '-', trim($this->data));
         $this->data = preg_replace("/-+/i", '-', $this->data);
         $this->data = strtolower($this->data);
