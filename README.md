@@ -1,5 +1,5 @@
 # Data Types
-
+ 
 When using multiple PHP string or array functions in one line, it makes code harder to read. This is because a programmer needs to be trained to read code from inner to outer, rather than traditionally left to right (unless you live in Japan). Eden's data typing are objects that correct this readability problem.
 
 **Figure 1. Inner to Outer**
@@ -20,7 +20,7 @@ When using multiple PHP string or array functions in one line, it makes code har
 	$string->uncamelize('-');        //replaces camel casing to lower case with dash between
 	$string->dasherize();            //transforms spaces to dashes or URL friendly name
 	$string->titlze('-');            //transforms a dashed string to a Title (Caps and spaces)
-	 
+
 	//Supported PHP String Methods
 	$string->addSlashes();
 	$string->bin2hex()
@@ -29,9 +29,9 @@ When using multiple PHP string or array functions in one line, it makes code har
 	$string->convertUuencode();
 	$string->crypt();    
 	$string->htmlEntityDecode();
-	$string->htmlentities(); 
+	$string->htmlentities();
 	$string->htmlspecialcharsDecode();
-	$string->htmlspecialchars(); 
+	$string->htmlspecialchars();
 	$string->lcfirst();
 	$string->ltrim();    
 	$string->md5();
@@ -59,11 +59,11 @@ When using multiple PHP string or array functions in one line, it makes code har
 	$string->strtr();
 	$string->substrReplace();    
 	$string->substr(1, 2);
-	$string->trim(); 
+	$string->trim();
 	$string->ucfirst();
 	$string->ucwords();  
 	$string->vsprintf();
-	$string->wordwrap(); 
+	$string->wordwrap();
 	$string->countChars();
 	$string->hex2bin();  
 	$string->strlen();
@@ -80,13 +80,13 @@ Similar to how strings objects in Eden can be echoed, array objects in Eden can 
 **Figure 4. Array objects as Arrays**
 
 	$array = eden('type', 1, 2, 3);         //instantiate
-	 
+
 	$array[] = 4;
-	 
+
 	echo $array[1];  //--> 2
-	 
+
 	foreach($array as $key => $value) {} //loop through array
-	 
+
 	echo $array; // outputs a json version of the array
 
 Below is a list of array methods you can linearly perform.
@@ -94,12 +94,12 @@ Below is a list of array methods you can linearly perform.
 **Figure 5. Array Methods**
 
 	$array = eden('type', 1, 2, 3);         //instantiate
-	 
+
 	$array->isEmpty();                               //returns true if array is empty
 	$array->copy('Key1', 'Key2');                    //copies the value of 'Key1' to 'Key2'
 	$array->cut(2);                                  //removes index of 2 and reindexes array
 	$array->paste('Key1', 'Key3', 'value');          //adds 'Key3' with the value of 'value' after 'Key1'
-	 
+
 	//Supported PHP Array Methods
 	$array->changeKeyCase();
 	$array->chunk();
